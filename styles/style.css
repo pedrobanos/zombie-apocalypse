@@ -4,11 +4,14 @@ body {
   
 }
 
-#game-board {
-  position: relative;
-  margin-top: 0px;
-  width: 1136px;
-  height: 720px;
+
+
+#home {
+  
+  width: 804px;
+  height: 700px;
+
+
 }
 
 .game-intro {
@@ -16,10 +19,6 @@ body {
   padding: 0% 10%;
 }
 
-.game-intro p {
-  font-size: 18px;
-  font-family: "Verdana"
-}
 
 .logo-img {
   width: 350px;

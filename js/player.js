@@ -7,8 +7,8 @@ class Player{
 
         this.vx = 0
         this.vy = 0
-        this.width = 73
-        this.height = 90
+        this.width = 58
+        this.height = 75
 
         this.movements = {
             up: false,
@@ -62,27 +62,6 @@ class Player{
         
 
     }
-
-    // setupListeners(event) {
-    //     const status = event.type === 'keydown'
-    
-    //     switch(event.keyCode) {
-    //       case KEY_UP:
-    //         this.movements.up = status
-    //         break
-    //       case KEY_DOWN:
-    //         this.movements.down = status
-    //         break
-    //       case KEY_RIGHT:
-    //         this.movements.right = status
-    //         break
-    //       case KEY_LEFT:
-    //         this.movements.left = status
-    //         break
-    //       default:
-    //         break
-    //     }
-    //   }
     
 
     move(){
@@ -130,24 +109,27 @@ class Player{
     }
 
     onKeyDown(keyCode) {
-        this.isRunning = true;
+        
+        if ([KEY_UP, KEY_DOWN, KEY_LEFT, KEY_RIGHT].includes(keyCode)) {
+            this.isRunning = true;
+        }
 
         if (keyCode === KEY_UP) {
-          this.vy = -3
+          this.vy = -2
           this.movements.up = true
         }
     
         if (keyCode === KEY_LEFT) {
-          this.vx = -3
+          this.vx = -2
           this.movements.left = true
         }
         if (keyCode === KEY_RIGHT) {
-            this.vx = 3
+            this.vx = 2
             this.movements.right = true
           }
 
         if (keyCode === KEY_DOWN) {
-          this.vy = 3
+          this.vy = 2
           this.movements.down = true
         }
       }
@@ -164,4 +146,17 @@ class Player{
           this.movements.left = false
         }
     }
+
+    collidesWith(zombie) {
+        if (
+            this.x < zombie.x + zombie.width/2 &&
+            this.x + this.width/2> zombie.x &&
+            this.y < zombie.y + zombie.height/2 &&
+            this.y + this.height/2 > zombie.y 
+          ) {
+            return true
+          }
+      
+          return false
+        }
 }

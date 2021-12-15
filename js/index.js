@@ -3,9 +3,13 @@ window.onload = function() {
   const ctx = canvas.getContext('2d')
   const game =  new Game (ctx);
 
+  const gameBoard = document.getElementById('game-board')
+ 
+
 
   document.getElementById("start-button").onclick = function() {
   const home = document.getElementById('home');
+  gameBoard.removeAttribute('style');
   home.style.display = 'none';
   game.startGame();
 
