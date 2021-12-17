@@ -60,7 +60,7 @@ class Game {
         
         this.zombies.forEach(zombie => zombie.draw())
 
-       // this.bullet.forEach(bullet =>bullet.draw())//revisar
+        this.bullet.forEach(bullet =>bullet.draw())
         
         this.drawScore()
 

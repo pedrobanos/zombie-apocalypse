@@ -1,18 +1,21 @@
 body {
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   
 }
 
 
-
-#home {
-  
-  width: 804px;
-  height: 700px;
-
-
+#home { 
+  width: 1136px;
+  height: 720px;
+  background-image: url('/Users/pedroalbertobanosfolcra/Desktop/proyecto canvas/images/unnamed.png');
+  background-size: cover;
 }
+
+
 
 .game-intro {
   float: center;
@@ -25,20 +28,38 @@ body {
 
 }
 
-.arrows-img {
-  width: 150px;
+.wasd-img {
+
+  margin: 5px 5px;
+  font-size: 20px;
+  color: red;
+  font-family:fantasy;
+  font-weight: bold;
+
+}
+.logo-controller{
+
+ align-items:initial;
+ 
+  
 }
 
-body button {
-  font-size: 25px;
-  background-color: #870007;
-  color:black ;
-  padding: 20px 20px;
-  border: 0;
-  box-shadow: 0,2;
-  border-radius: 5px;
-  margin-bottom: 20px;
+
+#start-button {
+  font-size: 22px;
+  text-align: center;
+  background-image: url('/Users/pedroalbertobanosfolcra/Desktop/proyecto canvas/images/SCORE.png');
+  background-size: 167px 89px;
+  align-items: center;
+  font-family: fantasy;
+  font-weight: bold;
+  color:rgb(126, 131, 118);
+  padding: 30px 30px;
+  background-color: transparent;
+  border: transparent;
+  margin-top: -20px;
   cursor: pointer;
+
 }
 
 

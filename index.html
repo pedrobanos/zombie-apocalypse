@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="styles/style.css" rel="stylesheet" media =""/>
-    <title>Zombie attack</title>
-  </head>
-  
-  <body>
 
-    <div id="home">
-      <img src="./images/zombie main menu.png" alt="" class="logo-img" style="width:800px;height:50vh"/>
-      <br/>
-      <button id="start-button">StartGame</button>
-      <p>Use the controls below!</p>
-      <img src="./images/Controls.png"  alt="" class="wasd-img" style="width:350px ; height:40vh"/>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="styles/style.css" rel="stylesheet" media="" />
+  <title>Zombie attack</title>
+</head>
 
-    <div id="game-board" style="display: none;">
-      <canvas id="canvas" width="1136" height="720"></canvas>
-    </div>
+<body>
+  <div id="home">
+    <img src="./images/zombie main menu.png" alt="" class="logo-img" style="width:800px;height:50vh" />
+    <br />
+    <button id="start-button">StartGame</button>
+    <p class="wasd-img" >Use the controls below!</p>
+    <img src="./images/Controls.png" alt="" class="logo-controller" style="width:350px ; height:40vh" />
+  </div>
 
-    <script type="text/javascript" src="js/constants.js"></script>
-    <script type="text/javascript" src="js/arena.js"></script>
-    <script type="text/javascript" src="js/zombie.js"></script>
-    <script type="text/javascript" src="js/player.js"></script>
-    <script type="text/javascript" src="js/bullet.js"></script>
-    <script type="text/javascript" src="js/game.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+  <div id="game-board" style="display: none;">
+    <canvas id="canvas" width="1136" height="720"></canvas>
+  </div>
+
+  <script type="text/javascript" src="js/constants.js"></script>
+  <script type="text/javascript" src="js/arena.js"></script>
+  <script type="text/javascript" src="js/zombie.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/bullet.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>

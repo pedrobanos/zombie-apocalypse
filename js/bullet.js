@@ -17,19 +17,26 @@ class Bullet{
         this.isShooting = false
 
         this.img = new Image()
-        this.img.src = 'images/sprites/skeleton sprite.jpeg'
+        this.img.src = 'images/bullet.png'
         this.img.isReady = false
         this.img.onload = () => {
             this.img.isReady = true
         }
     }
 
-    draw(){
-
-        this.ctx.fillRect(this.player.x, this.player.y, 5, 1)
-
-
-    }
+    draw() {
+        if (this.img.isReady) {
+          this.ctx.drawImage(
+            this.img,
+            0,
+            0,
+            this.width,
+            this.height,
+          )
+    
+        }
+    
+      }
 
     move(){
         
