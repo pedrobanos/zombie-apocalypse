@@ -11,7 +11,7 @@ body {
 #home { 
   width: 1136px;
   height: 720px;
-  background-image: url('/Users/pedroalbertobanosfolcra/Desktop/proyecto canvas/images/unnamed.png');
+  background-image: url('./Users/pedroalbertobanosfolcra/Desktop/proyecto canvas/images/unnamed.png');
   background-size: cover;
   background-color:rgb(59, 75, 33);
 }
