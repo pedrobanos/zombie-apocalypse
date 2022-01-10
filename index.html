@@ -15,20 +15,27 @@
     <br />
     <button id="start-button">StartGame</button>
     <p class="wasd-img" >Use the controls below!</p>
-    <img src="./images/Controls.png" alt="" class="logo-controller" style="width:350px ; height:40vh" />
+    <img src="./images/Controls.png" alt="" class="logo-controller" style="width:350px ; height:40vh" /> 
+    <img src="./images/space-bar-icon-5.png" alt="" class="spacebar-controller" style="width:150px ; height:20vh" />
   </div>
 
-  <div id="game-board" style="display: none;">
+  <div id="game-board" style="display: none">
     <canvas id="canvas" width="1136" height="720"></canvas>
+    <div id="game-over">
+      <p id = "score"></p>
+      <button class="restart" role="button">Dead again?</button>
+    </div>
   </div>
 
-  <script type="text/javascript" src="js/constants.js"></script>
-  <script type="text/javascript" src="js/arena.js"></script>
-  <script type="text/javascript" src="js/zombie.js"></script>
-  <script type="text/javascript" src="js/player.js"></script>
-  <script type="text/javascript" src="js/bullet.js"></script>
-  <script type="text/javascript" src="js/game.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="./js/constants.js"></script>
+  <script type="text/javascript" src="./js/arena.js"></script>
+  <script type="text/javascript" src="./js/killScore.js"></script>
+  <script type="text/javascript" src="./js/survivalTimeScore.js"></script>
+  <script type="text/javascript" src="./js/zombie.js"></script>
+  <script type="text/javascript" src="./js/player.js"></script>
+  <script type="text/javascript" src="./js/bullet.js"></script>
+  <script type="text/javascript" src="./js/game.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>

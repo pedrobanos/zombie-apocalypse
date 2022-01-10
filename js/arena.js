@@ -3,7 +3,7 @@ class Arena {
     this.ctx = ctx;
 
     this.img = new Image();
-    this.img.src = 'images/possible backgrount.png';
+    this.img.src = './images/possible background.png';
 
     this.y = 0
     this.x = 0

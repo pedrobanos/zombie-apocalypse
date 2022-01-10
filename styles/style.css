@@ -13,6 +13,7 @@ body {
   height: 720px;
   background-image: url('/Users/pedroalbertobanosfolcra/Desktop/proyecto canvas/images/unnamed.png');
   background-size: cover;
+  background-color:rgb(59, 75, 33);
 }
 
 
@@ -32,9 +33,9 @@ body {
 
   margin: 5px 5px;
   font-size: 20px;
-  color: red;
+  color:rgb(2, 2, 2);
   font-family:fantasy;
-  font-weight: bold;
+  font-weight: 900;
 
 }
 .logo-controller{
@@ -44,11 +45,21 @@ body {
   
 }
 
+.spacebar-controller{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transform: translate(-20%,-99%);
+  
+
+}
+
 
 #start-button {
   font-size: 22px;
   text-align: center;
-  background-image: url('/Users/pedroalbertobanosfolcra/Desktop/proyecto canvas/images/SCORE.png');
+  background-image: url('../images/SCORE.png');
   background-size: 167px 89px;
   align-items: center;
   font-family: fantasy;
@@ -58,8 +69,79 @@ body {
   background-color: transparent;
   border: transparent;
   margin-top: -20px;
-  cursor: pointer;
+  
 
 }
 
+#game-over{
+  background-image: url('../images/game over background.jpeg');
+  width: 1150px;
+  height: 900px;
+  position: absolute;
+  transform: translate(-50%, -51%);
+  top: 50%;
+  left: 50%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+#score{
+  font-family:fantasy;
+  display: flex;
+  color: #422800;
+  background-image: url('../images/gameovergrame.png');
+  background-size: cover;
+  height: 75px;
+  border: 2px solid #422800;
+  background-color: #bd2207;
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 35px;
+  padding: 0 15px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-top: -110px;
+  transform: translate(0%,-99%);
+}
+
+
+
+.restart {
+  background-color: #bd2207;
+  border: 2px solid #130b01;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-family: fantasy;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  transform: translate(0%,0%);
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.restart:hover {
+  background-color: #fff;
+}
+
+.restart:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(1px, 2px);
+}
+
+@media (min-width: 768px) {
+  .restart {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
